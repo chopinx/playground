@@ -27,8 +27,10 @@ The script will alternate messages between Bot A and Bot B for the specified num
 ### Usage
 
 ```bash
-python memory_chatbots.py "<topic>" --turns 3
+python memory_chatbots.py "<topic>" --turns 3 --personality excited
 ```
 
-The bots will read the current summary before replying so they retain a minimal context.
+The `--personality` flag selects a preset style and also controls how many words
+are retained in the running summary (the "rot" value). Use `--help` to see
+available personalities.
 
