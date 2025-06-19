@@ -1,13 +1,22 @@
-# Python3 Playground
+# Playground
 
-This repository contains a minimal Python3 playground.
+This repository contains sample scripts.
 
-## Running
+## chatbots.py
 
-Execute the `main.py` script using Python 3:
+`chatbots.py` uses the OpenAI API to simulate two ChatGPT bots that talk to each other about a user-provided topic.
+
+### Requirements
+
+- Python 3.8+
+- `openai` Python package
+- An OpenAI API key set in the `OPENAI_API_KEY` environment variable
+
+### Usage
 
 ```bash
-python3 main.py
+python chatbots.py "<topic>" --turns 3
 ```
 
-You should see the welcome message printed to the console.
+The script will alternate messages between Bot A and Bot B for the specified number of turns.
+
