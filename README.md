@@ -20,3 +20,15 @@ python chatbots.py "<topic>" --turns 3
 
 The script will alternate messages between Bot A and Bot B for the specified number of turns.
 
+## memory_chatbots.py
+
+`memory_chatbots.py` demonstrates how to keep a conversation log and running summary entirely in memory without external dependencies.
+
+### Usage
+
+```bash
+python memory_chatbots.py "<topic>" --turns 3
+```
+
+The bots will read the current summary before replying so they retain a minimal context.
+
